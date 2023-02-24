@@ -1,0 +1,13 @@
+.root {
+  width: fit-content;
+
+  &.white {
+    filter: invert(99%) sepia(1%) saturate(404%) hue-rotate(280deg)
+      brightness(113%) contrast(80%);
+  }
+
+  &.grey {
+    filter: invert(29%) sepia(3%) saturate(2680%) hue-rotate(192deg)
+      brightness(99%) contrast(85%);
+  }
+}

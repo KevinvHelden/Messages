@@ -1,0 +1,18 @@
+@use "./fonts.module.scss";
+
+$color-black: #0b0c0e;
+$color-white: #e6e6e6;
+$color-grey: #272932;
+$color-light-grey: #4e5264;
+$color-red: #f05d5e;
+$color-dark-green: #0f7173;
+$color-green: #12d67f;
+
+$color-background: $color-black;
+$color-background-lifted: $color-grey;
+$color-background-lifted2: $color-light-grey;
+$color-text-dark: #2d2f39;
+$color-text-light: $color-white;
+$color-primary: $color-green;
+$color-success: $color-dark-green;
+$color-error: $color-red;

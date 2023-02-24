@@ -1,0 +1,17 @@
+@use "../../styles/variables.module.scss" as v;
+
+.root {
+  all: unset;
+  position: relative;
+  border-radius: 1rem;
+  background-color: v.$color-grey;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.isRound {
+    border-radius: 500px;
+  }
+}
