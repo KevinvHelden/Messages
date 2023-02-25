@@ -1,12 +1,15 @@
-import styles from "@/styles/pages/home/styles.module.scss";
-import Header from "../components/header";
+import ChatCardGroup from "@/components/chatCardGroup";
+import styles from "./styles.module.scss";
 import { Fragment } from "react";
+import cards from "@/data/mockUsers.json";
 
 export default function Home() {
   return (
     <Fragment>
-      <Header />
-      <main className={styles.main}></main>
+      <main className={styles.root}>
+        <ChatCardGroup title="Pinned" chatCards={cards} />
+        <ChatCardGroup chatCards={[...cards, ...cards]} />
+      </main>
     </Fragment>
   );
 }

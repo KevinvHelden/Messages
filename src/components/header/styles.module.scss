@@ -1,13 +1,18 @@
 .root {
-  position: relative;
-  padding: 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(11, 12, 14, 0.8);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 3rem 3rem 1.5rem 3rem;
+  z-index: 100;
+  backdrop-filter: blur(1rem);
 
   .title {
-    font-family: "bold";
     margin: 0;
     font-size: 2.4rem;
+    font-weight: 700;
   }
 }

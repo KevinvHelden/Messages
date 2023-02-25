@@ -1,0 +1,17 @@
+@use "../../styles/variables.module.scss" as v;
+
+.root {
+  position: relative;
+  background-color: v.$color-error;
+  width: 2rem;
+  min-width: 2rem;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: v.$color-text;
+}

@@ -1,13 +1,14 @@
 import Image from "next/image";
 import classNames from "classnames";
 import styles from "./styles.module.scss";
+import ICONS from "@/data/enum/icon";
 
 export type Props = {
-  icon: "search" | "user";
-  color: "white" | "grey";
+  icon: ICONS;
+  color?: "white" | "grey";
 };
 
-const Icon = ({ icon, color }: Props) => {
+const Icon = ({ icon, color = "white" }: Props) => {
   const source = require(`../../../assets/svg/${icon}.svg`);
 
   return (

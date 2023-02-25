@@ -1,9 +1,13 @@
 @font-face {
-  src: url("../../assets/fonts/regular.ttf");
-  font-family: "regular";
+  font-family: "Visuelt Pro";
+  font-display: swap;
+  font-weight: 400;
+  src: url("../../assets/fonts/regular.ttf")  format("trueType");
 }
 
 @font-face {
-  src: url("../../assets/fonts/bold.ttf");
-  font-family: "bold";
+  font-family: "Visuelt Pro";
+  font-display: swap;
+  font-weight: 700;
+  src: url("../../assets/fonts/bold.ttf") format("trueType");
 }

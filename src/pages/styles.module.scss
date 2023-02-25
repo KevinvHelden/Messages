@@ -1,0 +1,10 @@
+@use "../styles/variables.module.scss" as v;
+
+.root {
+    padding: 3.5rem 0 10.6rem 0;
+
+    > div:nth-of-type(2){
+        border-top: 0.1rem solid v.$color-background-lifted;
+        padding-top: 2.5rem;
+    }
+}

@@ -1,0 +1,98 @@
+@use "../../styles/variables.module.scss" as v;
+
+.root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 2rem 3rem;
+  text-decoration: none;
+
+  .image-container {
+    width: 5rem;
+    aspect-ratio: 1 / 1;
+    background-color: v.$color-background-lifted;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.group {
+      border-radius: 1rem;
+    }
+
+    .profile-image {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+    max-width: calc(100% - 6.5rem);
+    gap: 0.5rem;
+    width: -webkit-fill-available;
+    margin-top: 0.7rem;
+
+    &.no-messages {
+      margin-top: 0;
+    }
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+
+    .name {
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: v.$color-text;
+    }
+
+    .time-since-last-received-message {
+      font-size: 1.2rem;
+      line-height: 1rem;
+      color: v.$color-text-low-emphasis;
+      text-align: right;
+      text-transform: uppercase;
+    }
+  }
+
+  .secondary-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+
+    &.no-messages {
+      margin-top: 0.5rem;
+    }
+
+    .last-received-message {
+      font-size: 1.2rem;
+      line-height: 1rem;
+      color: v.$color-text-low-emphasis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 17.5rem;
+
+      &.colored {
+        color: v.$color-primary;
+      }
+
+      .user {
+        color: v.$color-text;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

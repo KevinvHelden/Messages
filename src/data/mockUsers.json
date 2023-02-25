@@ -1,0 +1,32 @@
+[
+    {
+        "image": "",
+        "variant": "user",
+        "name": "Natasha Yin",
+        "lastReceivedMessage": "Hey, I can’t do today sadly, let’s do it some other time if you're free",
+        "timeSinceLastReceivedMessage": "5 mins ago",
+        "amountOfUnreadMessages": 1,
+        "isOnline": false
+    },
+    {
+        "image": "",
+        "variant": "user",
+        "name": "Michael Scott",
+        "lastReceivedMessage": "THAT’S WHAT SHE SAID! LOL",
+        "timeSinceLastReceivedMessage": "yesterday",
+        "amountOfUnreadMessages": 0,
+        "isOnline": false
+    },
+    {
+        "image": "",
+        "variant": "group",
+        "name": "McDinges",
+        "lastReceivedMessage": {
+            "user": "kai",
+            "message": "Hey, I can’t do today sadly, let’s do it some other time if you're free"
+        },
+        "timeSinceLastReceivedMessage": "yesterday",
+        "amountOfUnreadMessages": 0,
+        "isOnline": false
+    }
+]
