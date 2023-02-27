@@ -5,17 +5,24 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
-  padding: 2rem 3rem;
+  padding: 2rem 0;
   text-decoration: none;
+  border-bottom: 1px solid v.$color-background-lifted;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
 
   .image-container {
     width: 5rem;
-    aspect-ratio: 1 / 1;
+    min-width: 5rem;
+    height: 5rem;
     background-color: v.$color-background-lifted;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     &.group {
       border-radius: 1rem;
@@ -25,6 +32,16 @@
       min-width: 100%;
       min-height: 100%;
       object-fit: cover;
+    }
+
+    .online-marker {
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: v.$color-primary;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%;
     }
   }
 
@@ -36,6 +53,7 @@
     gap: 0.5rem;
     width: -webkit-fill-available;
     margin-top: 0.7rem;
+    justify-content: center;
 
     &.no-messages {
       margin-top: 0;
@@ -93,6 +111,13 @@
         color: v.$color-text;
         text-transform: capitalize;
       }
+    }
+
+    .icons {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

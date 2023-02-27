@@ -2,21 +2,4 @@
 
 .root {
   position: relative;
-  padding: 0 0 2.5rem;
-
-  > div {
-    border-top: 0.1rem solid v.$color-background-lifted;
-
-    &:first-of-type {
-      border-top: none;
-    }
-  }
-
-  .title {
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-    color: v.$color-background-lifted2;
-    margin: 0 3rem 1rem;
-  }
 }

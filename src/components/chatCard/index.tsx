@@ -6,15 +6,17 @@ import { Fragment, useState } from "react";
 import Icon from "../icon";
 import ICONS from "@/data/enum/icon";
 import Link from "next/link";
+import getTimeInHumanLanguage from "@/util/getTimeInHumanLanguage";
 
 export type Props = {
   image: string;
   variant?: "user" | "group";
   name: string;
   lastReceivedMessage: { user: string; message: string } | string;
-  timeSinceLastReceivedMessage: string;
+  timeSinceLastReceivedMessage: number;
   amountOfUnreadMessages: number;
   isOnline: boolean;
+  isBookmarked?: boolean;
 };
 
 const ChatCard = ({
@@ -25,6 +27,7 @@ const ChatCard = ({
   timeSinceLastReceivedMessage,
   amountOfUnreadMessages,
   isOnline,
+  isBookmarked,
 }: Props) => {
   const [imageHasError, setImageHasError] = useState(false);
 
@@ -62,6 +65,7 @@ const ChatCard = ({
             alt="profile"
           />
         )}
+        {isOnline && <div className={styles["online-marker"]} />}
       </div>
       <div
         className={classNames([
@@ -72,7 +76,7 @@ const ChatCard = ({
         <div className={styles["info-container"]}>
           <h6 className={styles.name}>{name}</h6>
           <p className={styles["time-since-last-received-message"]}>
-            {timeSinceLastReceivedMessage}
+            {getTimeInHumanLanguage(timeSinceLastReceivedMessage)}
           </p>
         </div>
         <div
@@ -89,9 +93,12 @@ const ChatCard = ({
           >
             {formatLastMessage()}
           </p>
-          {amountOfUnreadMessages > 0 && (
-            <Badge>{amountOfUnreadMessages}</Badge>
-          )}
+          <div className={styles.icons}>
+            {isBookmarked && <Icon color="grey" icon={ICONS.BOOKMARK_FILLED} />}
+            {amountOfUnreadMessages > 0 && (
+              <Badge>{amountOfUnreadMessages}</Badge>
+            )}
+          </div>
         </div>
       </div>
     </Link>

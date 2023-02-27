@@ -2,10 +2,10 @@
     {
         "image": "",
         "variant": "user",
-        "name": "Natasha Yin",
+        "name": "Kyle Rogers",
         "lastReceivedMessage": "Hey, I can’t do today sadly, let’s do it some other time if you're free",
-        "timeSinceLastReceivedMessage": "5 mins ago",
-        "amountOfUnreadMessages": 1,
+        "timeSinceLastReceivedMessage": 1677446829,
+        "amountOfUnreadMessages": 2,
         "isOnline": false
     },
     {
@@ -13,9 +13,19 @@
         "variant": "user",
         "name": "Michael Scott",
         "lastReceivedMessage": "THAT’S WHAT SHE SAID! LOL",
-        "timeSinceLastReceivedMessage": "yesterday",
+        "timeSinceLastReceivedMessage": 1677331629,
         "amountOfUnreadMessages": 0,
         "isOnline": false
+    },
+    {
+        "image": "",
+        "variant": "user",
+        "name": "Natasha Yin",
+        "lastReceivedMessage": "Hey, I can’t do today sadly, let’s do it some other time if you're free",
+        "timeSinceLastReceivedMessage": 1675291835,
+        "amountOfUnreadMessages": 1,
+        "isOnline": true,
+        "isBookmarked": true
     },
     {
         "image": "",
@@ -25,7 +35,16 @@
             "user": "kai",
             "message": "Hey, I can’t do today sadly, let’s do it some other time if you're free"
         },
-        "timeSinceLastReceivedMessage": "yesterday",
+        "timeSinceLastReceivedMessage": 1677533229,
+        "amountOfUnreadMessages": 0,
+        "isOnline": false
+    },
+    {
+        "image": "",
+        "variant": "user",
+        "name": "Peter Goldberg",
+        "lastReceivedMessage": "Hey, I can’t do today sadly, let’s do it some other time if you're free",
+        "timeSinceLastReceivedMessage": 1677101229,
         "amountOfUnreadMessages": 0,
         "isOnline": false
     }

@@ -7,8 +7,7 @@ export default function Home() {
   return (
     <Fragment>
       <main className={styles.root}>
-        <ChatCardGroup title="Pinned" chatCards={cards} />
-        <ChatCardGroup chatCards={[...cards, ...cards]} />
+        <ChatCardGroup chatCards={cards} />
       </main>
     </Fragment>
   );
