@@ -1,0 +1,15 @@
+@use "../../styles/variables.module.scss" as v;
+
+.root {
+    position: relative;
+    font-family: "Visuelt Pro", Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border: none;
+    color: v.$color-text;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

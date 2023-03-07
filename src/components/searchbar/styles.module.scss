@@ -1,0 +1,94 @@
+@use "../../styles/variables.module.scss" as v;
+
+.root {
+  position: relative;
+  height: 4.5rem;
+  z-index: 6;
+
+  .input-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4.5rem;
+    border-radius: 1rem;
+    transition: 0.2s width;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &.active {
+      width: calc(100vw - 6rem);
+
+      .input,
+      button {
+        pointer-events: auto;
+        right: 3rem;
+      }
+    }
+
+    .input {
+      padding: 0;
+      border: none;
+      background-color: v.$color-background-lifted;
+      border-radius: 1rem;
+      width: 100%;
+      max-width: calc(100% - 6.138rem);
+      height: 100%;
+      pointer-events: none;
+      color: v.$color-text;
+      padding-left: 4.5rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-family: "Visuelt Pro", Arial, Helvetica, sans-serif;
+
+      &::placeholder {
+        color: v.$color-background-lifted2;
+      }
+    }
+
+    > button {
+      pointer-events: none;
+      position: fixed;
+      right: -5.138rem;
+      transition: 0.2s right;
+      height: 4.5rem;
+    }
+  }
+}
+
+.search-result-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(11, 12, 14, 0.9);;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  inset: 0;
+  transition: 0.2s;
+  padding: 12.5rem 3rem 0;
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &.dark {
+    background-color: v.$color-background;
+  }
+
+  .search-result-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .view-all-button {
+    height: 5rem;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.8rem;
+    border-bottom: 0.1rem solid v.$color-background-lifted;
+    color: v.$color-background-lifted2;
+    gap: 0.5rem;
+  }
+}

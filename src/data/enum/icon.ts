@@ -5,6 +5,7 @@ enum ICONS {
   PHONE = "phone",
   PLUS = "plus",
   USERS = "users",
+  ARROW_RIGHT = "arrow-right",
 }
 
 export default ICONS;

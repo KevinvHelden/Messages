@@ -2,14 +2,10 @@
 
 .root {
   position: relative;
-  padding: 0 0 2.5rem;
+  padding: 0 3rem 2.5rem;
 
-  > div {
-    border-top: 0.1rem solid v.$color-background-lifted;
-
-    &:first-of-type {
-      border-top: none;
-    }
+  > a:last-of-type {
+    border-bottom: none;
   }
 
   .title {

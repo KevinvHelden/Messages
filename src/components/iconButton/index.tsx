@@ -5,11 +5,12 @@ import classNames from "classnames";
 
 interface Props extends IconProps {
   isRound?: boolean;
+  onClick?: () => void;
 }
 
-const IconButton = ({ icon, color, isRound = false }: Props) => {
+const IconButton = ({ icon, color, isRound = false, onClick }: Props) => {
   return (
-    <button className={classNames(styles.root, { [styles.isRound]: isRound })}>
+    <button onClick={onClick} className={classNames(styles.root, { [styles.isRound]: isRound })}>
       <Icon icon={icon} color={color} />
     </button>
   );

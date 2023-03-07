@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export type Props = {
   image: string;
-  variant?: "user" | "group";
+  variant?: string;
   name: string;
   lastReceivedMessage: { user: string; message: string } | string;
   timeSinceLastReceivedMessage: string;
